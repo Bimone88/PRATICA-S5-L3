@@ -1,0 +1,69 @@
+/* Stili di base per la barra di navigazione */
+nav {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+      'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #FBF7E3;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80px;
+    justify-content: center;
+    border-radius: 30px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin: 0.5em 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Stile generale per i link */
+  nav ul li a {
+    text-decoration: none;
+    color: #612406;
+    padding: 0.5em 1em;
+    border-radius: 30px;
+    background-color: #F3DF85;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Stile per il bottone "Shop" */
+  nav ul li .shop-btn {
+    background-image: url("./logo.png");
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: 25px center;
+    text-indent: 40px;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  nav ul li .shop-btn .shop-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  /* Stili per schermi più grandi (media query) */
+  @media screen and (min-width: 576px) {
+    nav ul {
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+    }
+  
+    nav ul li {
+      margin-bottom: 0;
+      margin-right: 0.5em;
+    }
+  }
+  
